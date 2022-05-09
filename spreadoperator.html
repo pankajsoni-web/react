@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+<script>
+const numbersOne = [1, 2, 3];
+const numbersTwo = [4, 5, 6];
+const numbersCombined = [...numbersOne, ...numbersTwo];
+
+document.write(numbersCombined);
+  const [one, two, ...rest] = numbersCombined;
+  document.write("<p>" + one + "</p>");
+document.write("<p>" + two + "</p>");
+document.write("<p>" + rest + "</p>");
+</script>
+
+</body>
+</html>
