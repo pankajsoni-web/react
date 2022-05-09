@@ -8,11 +8,15 @@
 <p>A demonstration of a simple arrow function.</p>
 
 <p id="demo"></p>
+<p id="demo1"></p>
   
 <script>
 hello = () => {
   return "Hello World!";
 }
+hello = (val) => "Hello " + val;
+
+document.getElementById("demo1").innerHTML = hello("World");
 
 document.getElementById("demo").innerHTML = hello();
 </script>
